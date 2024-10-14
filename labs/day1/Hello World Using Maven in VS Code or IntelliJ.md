@@ -30,10 +30,7 @@ Before starting the exercise, ensure the following software is installed and con
 Run the following Maven command to generate a new Maven project:
 
 ```
-mvn archetype:generate -DgroupId=com.example.helloworld \
-    -DartifactId=hello-world-app \
-    -DarchetypeArtifactId=maven-archetype-quickstart \
-    -DinteractiveMode=false
+mvn archetype:generate -DgroupId=com.example -DartifactId=hello-world -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
 
 ```
 
