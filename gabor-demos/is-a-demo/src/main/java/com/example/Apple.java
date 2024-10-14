@@ -1,5 +1,6 @@
 package com.example;
 
+// This is inheritance
 // Apple is a subclass of Fruit, and Fruit is a superclass of Apple
 public class Apple extends Fruit {
     private String variety;
@@ -17,7 +18,8 @@ public class Apple extends Fruit {
         this.variety = variety;
     }
 
-    @Override
+    // this is an annotation, not mandatory but a good practice
+    // @Override
     public void harvest() {
         System.out.println("The apple is harvested.");
     }

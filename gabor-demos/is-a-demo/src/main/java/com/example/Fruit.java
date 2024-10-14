@@ -18,6 +18,7 @@ public class Fruit {
         return color;
     }
 
+    // this is a method, but in more general terms it is an operation
     public void harvest() {
         System.out.println("The fruit is harvested.");
     }
