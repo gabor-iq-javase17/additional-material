@@ -1,2 +1,1 @@
-# additional-material
-Additional Material for Java SE 17 Training
+# Additional Material for Java SE 17 Training
