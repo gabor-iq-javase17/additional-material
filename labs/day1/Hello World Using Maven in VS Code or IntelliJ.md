@@ -18,6 +18,10 @@ Before starting the exercise, ensure the following software is installed and con
 4.  **Maven for Java Extension in VS Code**: Install the "Maven for Java" extension from the VS Code marketplace.
 5.  **Java Extension Pack for VS Code**: Install the "Java Extension Pack" for enhanced Java development support.
 
+### Hint:
+
+- If you are unsure you always could browse the full solution of this exercise in the `gabor-demos` folder of this very repository, this case: [day1/hello-world-app](gabor-demos/hello-world-demo).
+
 ---
 
 ### Step-by-Step Instructions:
