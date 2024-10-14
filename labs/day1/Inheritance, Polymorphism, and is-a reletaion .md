@@ -27,6 +27,7 @@ In this lab, students will develop a Java application using Object-Oriented Prog
 
 ```xml
 <properties>
+    <... anything here ...>
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
 </properties>
