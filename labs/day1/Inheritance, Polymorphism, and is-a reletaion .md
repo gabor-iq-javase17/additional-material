@@ -20,8 +20,17 @@ In this lab, students will develop a Java application using Object-Oriented Prog
 
 #### Step 1: Create a Java Project
 
-- Create a new Java project in your IDE (e.g., IntelliJ, Eclipse, etc.).
+- Create a new Java project in your IDE (e.g., IntelliJ, Eclipse, VS Code etc.).
+- Use maven archetype to create a new project, with the usual steps.
 - Add a meaningfull name which reflects to the takeaway, for example `is-a-demo`.
+- After creating the project, do not forget to use out java version 17... meaning: edit the `pom.xml` file and add the following lines:
+
+```xml
+<properties>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
+</properties>
+
 
 #### Step 2: Define the Base Class
 
@@ -92,12 +101,13 @@ In this lab, students will develop a Java application using Object-Oriented Prog
 
 - Upon running the `App` class, you should see output like:
 
-  ```
-  The apple is harvested.
-  The apple is processed.
-  The apple has been eaten.
+```
 
-  ```
+The apple is harvested.
+The apple is processed.
+The apple has been eaten.
+
+```
 
 - If you incorrectly cast a `Peach` object to an `Apple`, you should see a `ClassCastException` at runtime.
 
@@ -107,12 +117,13 @@ In this lab, students will develop a Java application using Object-Oriented Prog
 
 - Source code for the `Fruit`, `Apple`, `Peach`, `FruitProcessor`, and `App` classes.
 - A short report explaining:
-  - The role of inheritance and method overriding in this lab.
-  - How polymorphism was demonstrated.
-  - The type of errors encountered when improper casting was attempted.
+- The role of inheritance and method overriding in this lab.
+- How polymorphism was demonstrated.
+- The type of errors encountered when improper casting was attempted.
 
 ---
 
 ### Summary
 
 In this lab, you created a simple fruit-processing system in Java using OOP concepts. You explored inheritance, method overriding, and polymorphism while learning about the behavior of objects during compile-time and runtime. Through hands-on coding, you also encountered real-world scenarios like type casting and its associated errors.
+```
