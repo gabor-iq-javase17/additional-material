@@ -10,7 +10,7 @@ In this lab, students will develop a Java application using Object-Oriented Prog
 
 ### Hint:
 
-- If you are unsure you always could browse the full solution of this exercise in the `gabor-demos` folder of this very repository, this case: [day1/hello-world-app](../../gabor-demos/is-a-demo).
+- If you are unsure you always could browse the full solution of this exercise in the `gabor-demos` folder of this very repository, this case: [day1/is-a-demo](../../gabor-demos/is-a-demo).
 
 ---
 
