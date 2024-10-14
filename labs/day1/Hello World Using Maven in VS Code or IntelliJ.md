@@ -20,7 +20,7 @@ Before starting the exercise, ensure the following software is installed and con
 
 ### Hint:
 
-- If you are unsure you always could browse the full solution of this exercise in the `gabor-demos` folder of this very repository, this case: [day1/hello-world-app](gabor-demos/hello-world-demo).
+- If you are unsure you always could browse the full solution of this exercise in the `gabor-demos` folder of this very repository, this case: [day1/hello-world-app](../../gabor-demos/hello-world-demo).
 
 ---
 
