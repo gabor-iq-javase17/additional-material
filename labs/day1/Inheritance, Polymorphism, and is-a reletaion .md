@@ -8,11 +8,9 @@ In this lab, students will develop a Java application using Object-Oriented Prog
 2.  Utilize polymorphism to process various types of fruit objects.
 3.  Understand type casting and compile-time vs. runtime behavior in Java.
 
-#### Prerequisites
+### Hint:
 
-- Basic understanding of Java syntax.
-- Familiarity with classes, methods, and objects in Java.
-- Some knowledge of inheritance and polymorphism.
+- If you are unsure you always could browse the full solution of this exercise in the `gabor-demos` folder of this very repository, this case: [day1/hello-world-app](../../gabor-demos/is-a-demo).
 
 ---
 
