@@ -31,7 +31,7 @@ In this lab, students will develop a Java application using Object-Oriented Prog
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
 </properties>
-
+```
 
 #### Step 2: Define the Base Class
 
@@ -127,4 +127,7 @@ The apple has been eaten.
 ### Summary
 
 In this lab, you created a simple fruit-processing system in Java using OOP concepts. You explored inheritance, method overriding, and polymorphism while learning about the behavior of objects during compile-time and runtime. Through hands-on coding, you also encountered real-world scenarios like type casting and its associated errors.
+
+```
+
 ```
