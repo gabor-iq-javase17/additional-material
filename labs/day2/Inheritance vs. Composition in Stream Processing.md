@@ -12,7 +12,7 @@ In this lab, you will explore the differences between using inheritance and comp
 
 ### Hint:
 
-- If you are unsure, you always could browse the full solution of this exercise in the `gabor-demos` folder of this very repository, this case: [day2/inheritance-is-overrated](../../gabor-demos/inheritance-is-overrated).
+- If you are unsure, you always could browse the full solution of this exercise in the `gabor-demos` folder of this very repository, this case: [day2/inheritance-is-overrated-demo](../../gabor-demos/inheritance-is-overrated-demo).
 
 ---
 
