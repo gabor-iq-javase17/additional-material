@@ -8,7 +8,8 @@ public class App {
     public static void main(String[] args) {
 
         MyStream networkStream = new NetworkStream();
-        MyStream fileStream = new FileStream();
+        Encryptor encryptor = new NaiveEncryptor();
+        MyStream fileStream = new EncryptedFileStream(encryptor);
 
         var processor = new StreamProcessor();
         processor.process(networkStream, "http://example.com");

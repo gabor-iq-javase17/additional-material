@@ -1,5 +1,6 @@
 package com.example;
 
+// this is 1000s lines of code in a real application
 public class FileStream implements MyStream {
     private String uri;
 

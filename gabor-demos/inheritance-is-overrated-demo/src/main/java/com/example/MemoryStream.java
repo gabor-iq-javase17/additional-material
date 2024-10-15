@@ -1,6 +1,7 @@
 package com.example;
 
-public class MemorySteam implements MyStream {
+// this is 100s lines of code in a real application
+public class MemoryStream implements MyStream {
     private String uri;
 
     public void open(String uri) {
