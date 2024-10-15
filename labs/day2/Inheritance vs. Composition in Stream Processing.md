@@ -7,7 +7,7 @@ In this lab, you will explore the differences between using inheritance and comp
 #### **Lab Requirements:**
 
 - **Language**: Java
-- **Time**: 1 hour
+- **Time**: 1 hour (max :-)
 - **Prerequisites**: Basic knowledge of Object-Oriented Programming, Inheritance, Interfaces, and Composition.
 
 ### Hint:
@@ -124,3 +124,7 @@ In this lab, you will explore the differences between using inheritance and comp
 
     - Why is composition more scalable for adding new behaviors to streams?
     - How does it improve maintainability and code readability?
+
+#### **Done :-)**
+
+If you have completed all the exercises successfully, **please raise your hand**, so the team will know your status. In case you are using the `team-review` repo (which is optional), do not forget commit then push your changes to the remote repository.
