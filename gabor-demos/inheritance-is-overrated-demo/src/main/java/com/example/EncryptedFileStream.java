@@ -1,6 +1,7 @@
 package com.example;
 
 // we are DRY (Don't Repeat Yourself) becase we are reusing the code from FileStream
+// Bad, using inheritance:
 public class EncryptedFileStream extends FileStream {
 
     private final Encryptor encryptor;

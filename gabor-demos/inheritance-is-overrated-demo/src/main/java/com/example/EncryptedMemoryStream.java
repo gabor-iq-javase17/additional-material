@@ -1,5 +1,6 @@
 package com.example;
 
+// Bad, using inheritance:
 public class EncryptedMemoryStream extends MemoryStream {
 
     private final Encryptor encryptor;

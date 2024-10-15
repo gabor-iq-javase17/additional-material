@@ -1,5 +1,6 @@
 package com.example;
 
+// Bad, using inheritance:
 public class EncryptedNetworkStream extends NetworkStream {
 
     private final Encryptor encryptor;
