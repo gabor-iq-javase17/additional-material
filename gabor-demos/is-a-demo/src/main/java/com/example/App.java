@@ -6,7 +6,7 @@ package com.example;
  */
 public class App {
     public static void main(String[] args) {
-        Fruit fruit = new Fruit("Apple", "Red");
+        Fruit fruit;
         Apple apple = new Apple("Apple", "Red", "Fuji");
         Peach peach = new Peach("Peach", "Yellow", "White");
 

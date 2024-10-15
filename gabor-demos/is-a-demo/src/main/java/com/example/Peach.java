@@ -1,6 +1,6 @@
 package com.example;
 
-public class Peach extends Fruit {
+public class Peach extends BaseFruit implements Fruit {
     private String variety;
 
     public Peach(String name, String color, String variety) {
