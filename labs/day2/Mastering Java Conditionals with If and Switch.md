@@ -76,7 +76,7 @@ public class App {
 
 ---
 
-### **Exercise 2: Grade Evaluation Using If-Else Statements**
+### **Exercise 2: Grade Evaluation Using embedded if and else Statements**
 
 **Objective**: Use `if-else` statements to evaluate a student's grade.
 
