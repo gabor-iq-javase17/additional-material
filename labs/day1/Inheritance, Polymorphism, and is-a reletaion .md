@@ -21,7 +21,7 @@ In this lab, students will develop a Java application using Object-Oriented Prog
 - Create a new Java project in your IDE (e.g., IntelliJ, Eclipse, VS Code etc.).
 - Use maven archetype to create a new project, with the usual steps.
 - Add a meaningfull name which reflects to the takeaway, for example `is-a-demo`.
-- After creating the project, do not forget to use out java version 17... meaning: edit the `pom.xml` file and add the following lines:
+- After creating the project, do not forget to instruct maven to use java version 17... meaning: edit the `pom.xml` file and add the following lines:
 
 ```xml
 <properties>
