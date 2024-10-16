@@ -57,6 +57,7 @@ public class NaiveList<T> implements MyList<T> {
         count--;
     }
 
+    @SuppressWarnings("unchecked")
     @Override
     public T get(int index) {
         if (index < 0 || index >= count) {
