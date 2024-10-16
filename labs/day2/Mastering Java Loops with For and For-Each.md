@@ -50,7 +50,7 @@ In this lab, you will practice using both `for` and `for-each` loops to solve ba
 
 **Code Example**:
 
-```
+```java
 public class App {
     public static void main(String[] args) {
         // Exercise 1: Print numbers from 1 to 10
@@ -87,7 +87,7 @@ Number: 10
 
 **Code Example**:
 
-```
+```java
 public class App {
     public static void main(String[] args) {
         int sum = 0;
@@ -123,7 +123,7 @@ Sum of even numbers from 1 to 20 is: 110
 
 **Code Example**:
 
-```
+```java
 public class App {
     public static void main(String[] args) {
         // Exercise 3: Iterate over an array of integers using a for-each loop
@@ -161,7 +161,7 @@ Number: 50
 
 **Code Example**:
 
-```
+```java
 public class App {
     public static void main(String[] args) {
         int[] numbers = {5, 17, 9, 13, 25};

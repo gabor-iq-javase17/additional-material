@@ -25,7 +25,7 @@ In this lab, you will practice using both `if` and `switch` statements to solve 
 - Add a meaningful name that reflects the exercise, such as `if-condition-...` or `switch-condition-...`.
 - After creating the project, do not forget to instruct Maven to use Java version 17 by editing the `pom.xml` file and adding the following lines:
 
-```
+```xml
 <properties>
     <... anything here ...>
     <maven.compiler.source>17</maven.compiler.source>
@@ -52,7 +52,7 @@ In this lab, you will practice using both `if` and `switch` statements to solve 
 
 **Code Example**:
 
-```
+```java
 public class App {
     public static void main(String[] args) {
         int num = 7;
@@ -92,7 +92,7 @@ public class App {
 
 **Code Example**:
 
-```
+```java
 public class App {
     public static void main(String[] args) {
         int score = 85;
@@ -141,7 +141,7 @@ Grade B
 
 **Code Example**:
 
-```
+```java
 public class App {
     public static void main(String[] args) {
         int day = 3;
@@ -201,7 +201,7 @@ Wednesday
 
 **Code Example**:
 
-```
+```java
 public class App {
     public static void main(String[] args) {
         double num1 = 10, num2 = 5;
