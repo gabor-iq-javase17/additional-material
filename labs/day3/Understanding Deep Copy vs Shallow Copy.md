@@ -36,7 +36,7 @@ In this lab, you will explore the difference between shallow copying and deep co
 
 #### Code Example:
 
-```
+```java
 class Address {
     String city;
 
@@ -85,7 +85,7 @@ public class App {
 
 **Expected Output**:
 
-```
+```bash
 Original address: New York
 Shallow copy address: New York
 
@@ -109,7 +109,7 @@ Shallow copy address: Los Angeles
 
 #### Code Example:
 
-```
+```java
 class Address {
     String city;
 
@@ -165,7 +165,7 @@ public class App {
 
 **Expected Output**:
 
-```
+```bash
 Original address: New York
 Deep copy address: New York
 
