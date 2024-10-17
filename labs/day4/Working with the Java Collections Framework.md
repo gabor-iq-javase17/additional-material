@@ -129,6 +129,12 @@ Repeat the steps for all six exercises below.
 
 ---
 
+**Done :-)**
+
+If you have completed all the exercises successfully, please raise your hand, so the team will see your status, or share your code with the instructor for review.
+
+---
+
 ### **Solutions**
 
 #### **Solution for Exercise 1: Sorting a List of Strings**
