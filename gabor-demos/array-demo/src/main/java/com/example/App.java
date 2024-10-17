@@ -1,5 +1,8 @@
 package com.example;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -40,21 +43,11 @@ public class App {
         ChessPiece[][] chessBoard = new ChessPiece[8][8];
         System.out.println(chessBoard[0][0]);
 
-        int a = 10;
-        int b = 20;
-        // CQS: Command Query Separation (Segregation)
+        List<String> names = new ArrayList<>(Arrays.asList("Alice", "Bob", "Charlie", "David"));
 
-        // String message;
-        // if (a < b) {
-        // message = "a is less than b";
-        // } else {
-        // message = "a is greater than or equal to b";
-        // }
+        // Sort in ascending order
+        Collections.sort(names);
+        names.sort((s1, s2) -> s1.compareTo(s2));
 
-        var message = a < b ? "a is less than b" : "a is greater than or equal to b";
-
-        if (a < b && x.operX()) {
-            System.out.println("a is less than b and greater than 5");
-        }
     }
 }
