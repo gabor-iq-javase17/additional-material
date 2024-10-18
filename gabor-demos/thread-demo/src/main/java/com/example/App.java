@@ -1,41 +1,31 @@
 package com.example;
 
-import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
 
-/**
- * Hello world!
- *
- */
 public class App {
-    public static void main(String[] args) {
-        var myRunnable = new MyRunnable();
 
-        // for (int i = 0; i < 8; i++) {
-        // var myThread = new Thread(myRunnable);
-        // myThread.setName("MyThread-" + i);
-        // myThread.start();
-        // }
-
-        var threads = new ArrayList<Thread>();
-        var counter = new Counter();
-        for (int i = 0; i < 8; i++) {
-            var thread = new Thread(counter);
-            thread.start();
-            threads.add(thread);
+    public static void main(String[] args) throws InterruptedException {
+        Queue<Integer> numbersQueue = new LinkedList<>();
+        for (int i = 1; i <= 1000; i++) {
+            numbersQueue.add(i); // Filling the queue with numbers 1 to 1000
         }
 
-        for (var thread : threads) {
-            try {
-                thread.join();
-            } catch (InterruptedException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
-            }
+        int numThreads = 4;
+        SumThread[] tasks = new SumThread[numThreads];
+
+        // Start threads that will compete for consuming numbers from the queue
+        for (int i = 0; i < numThreads; i++) {
+            tasks[i] = new SumThread(numbersQueue);
+            tasks[i].start();
         }
 
-        // 800 000 000
-        // < 800 000 000
-        // > 800 000 000
-        System.out.println("Count: " + counter.getCount());
+        int totalSum = 0;
+        for (SumThread task : tasks) {
+            task.join(); // Wait for all threads to finish
+            totalSum += task.getPartialSum();
+        }
+
+        System.out.println("Total sum: " + totalSum); // Expected output: 500500
     }
 }
