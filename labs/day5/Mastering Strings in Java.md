@@ -157,11 +157,12 @@ If you have completed all the exercises successfully, please raise your hand, so
 
 ---
 
-#### **Exercise 1 Solution**
+### **Exercise 1 Solution: Manipulating Strings**
 
 ```Java
 public class App {
     public static void main(String[] args) {
+        // String manipulation
         String str1 = "Hello";
         String str2 = "World";
 
@@ -170,8 +171,8 @@ public class App {
         System.out.println("Concatenated: " + concatenated);
 
         // Substring
-        String sub = concatenated.substring(6, 11);
-        System.out.println("Substring: " + sub);
+        String substring = concatenated.substring(6, 11);
+        System.out.println("Substring: " + substring);
 
         // Uppercase and Lowercase
         System.out.println("Uppercase: " + concatenated.toUpperCase());
@@ -191,23 +192,20 @@ Lowercase: hello world
 
 ```
 
-**Discussion**: This exercise demonstrates basic string manipulations including concatenation, substring extraction, and case conversions.
-
-**Takeaway**: Strings in Java are immutable, and each manipulation results in a new string object.
-
 ---
 
-#### **Exercise 2 Solution**
+### **Exercise 2 Solution: Parsing Strings**
 
 ```Java
 public class App {
     public static void main(String[] args) {
+        // Comma-separated string
         String data = "John,25,Engineer";
 
-        // Splitting the string
+        // Split the string
         String[] fields = data.split(",");
 
-        // Display parsed fields
+        // Display the parsed fields
         System.out.println("Name: " + fields[0]);
         System.out.println("Age: " + fields[1]);
         System.out.println("Profession: " + fields[2]);
@@ -225,13 +223,9 @@ Profession: Engineer
 
 ```
 
-**Discussion**: The `split()` method is a powerful tool for parsing strings based on a delimiter.
-
-**Takeaway**: Parsing strings is often necessary when working with structured data.
-
 ---
 
-#### **Exercise 3 Solution**
+### **Exercise 3 Solution: Comparing Strings**
 
 ```Java
 public class App {
@@ -239,10 +233,10 @@ public class App {
         String str1 = "apple";
         String str2 = "banana";
 
-        // Comparing using equals()
+        // Compare strings using equals()
         System.out.println("Equals: " + str1.equals(str2));
 
-        // Comparing using compareTo()
+        // Compare strings using compareTo()
         System.out.println("CompareTo: " + str1.compareTo(str2));
     }
 }
@@ -257,13 +251,9 @@ CompareTo: -1
 
 ```
 
-**Discussion**: The `equals()` method compares the content of strings, while `compareTo()` provides lexicographical ordering information.
-
-**Takeaway**: Use `equals()` for content comparison and `compareTo()` for sorting purposes.
-
 ---
 
-#### **Exercise 4 Solution**
+### **Exercise 4 Solution: Demonstrating String Interning**
 
 ```Java
 public class App {
@@ -271,13 +261,15 @@ public class App {
         String literalStr = "Java";
         String newStr = new String("Java");
 
-        // Comparing with == and equals()
-        System.out.println("Using ==: " + (literalStr == newStr));
-        System.out.println("Using equals(): " + literalStr.equals(newStr));
+        // Using == and equals() before interning
+        System.out.println("Using ==: " + (literalStr == newStr)); // false
+        System.out.println("Using equals(): " + literalStr.equals(newStr)); // true
 
         // Interning the newStr
         newStr = newStr.intern();
-        System.out.println("After interning, using ==: " + (literalStr == newStr));
+
+        // Using == after interning
+        System.out.println("After interning, using ==: " + (literalStr == newStr)); // true
     }
 }
 
@@ -292,13 +284,9 @@ After interning, using ==: true
 
 ```
 
-**Discussion**: This exercise demonstrates string interning, where the `intern()` method stores a string in a common pool, allowing for efficient memory use and reference comparison.
-
-**Takeaway**: String interning optimizes memory usage by storing only one copy of a string literal.
-
 ---
 
-#### **Exercise 5 Solution**
+### **Exercise 5 Solution: Using Regular Expressions for Email Validation**
 
 ```Java
 import java.util.regex.Pattern;
@@ -308,7 +296,7 @@ public class App {
     public static void main(String[] args) {
         String[] emails = { "test@example.com", "invalid-email", "user@domain.org" };
 
-        // Email validation pattern
+        // Email validation regex
         String emailPattern = "^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+$";
         Pattern pattern = Pattern.compile(emailPattern);
 
@@ -316,4 +304,112 @@ public class App {
             Matcher matcher = pattern.matcher(email);
             System.out.println(email + " is valid: " + matcher.matches());
         }
+    }
+}
+
 ```
+
+**Expected Output**:
+
+```
+test@example.com is valid: true
+invalid-email is valid: false
+user@domain.org is valid: true
+
+```
+
+---
+
+### **Exercise 6 Solution: Reversing a String**
+
+```Java
+public class App {
+    public static void main(String[] args) {
+        String original = "Java Programming";
+        StringBuilder reversed = new StringBuilder();
+
+        // Loop to reverse the string
+        for (int i = original.length() - 1; i >= 0; i--) {
+            reversed.append(original.charAt(i));
+        }
+
+        // Display reversed string
+        System.out.println("Reversed: " + reversed.toString());
+    }
+}
+
+```
+
+**Expected Output**:
+
+```
+Reversed: gnimmargorP avaJ
+
+```
+
+---
+
+### **Exercise 7 Solution: Finding Substrings**
+
+```Java
+public class App {
+    public static void main(String[] args) {
+        String str = "Java Programming is fun";
+        String substring = "Programming";
+
+        // Finding substring positions
+        int firstIndex = str.indexOf(substring);
+        int lastIndex = str.lastIndexOf(substring);
+
+        // Display positions
+        System.out.println("First occurrence: " + firstIndex);
+        System.out.println("Last occurrence: " + lastIndex);
+    }
+}
+
+```
+
+**Expected Output**:
+
+```
+First occurrence: 5
+Last occurrence: 5
+
+```
+
+---
+
+### **Exercise 8 Solution: Splitting Strings by Multiple Delimiters**
+
+```Java
+public class App {
+    public static void main(String[] args) {
+        String data = "Java,Python;C++ Ruby";
+
+        // Split the string by spaces, commas, or semicolons
+        String[] tokens = data.split("[,;\\s]+");
+
+        // Display the tokens
+        for (String token : tokens) {
+            System.out.println(token);
+        }
+    }
+}
+
+```
+
+**Expected Output**:
+
+```
+Java
+Python
+C++
+Ruby
+
+```
+
+---
+
+### **Conclusion**
+
+This lab demonstrates various techniques for working with strings in Java, including manipulation, parsing, comparison, string interning, regular expressions, and more. Mastering these string operations will help you efficiently process text in Java programs.

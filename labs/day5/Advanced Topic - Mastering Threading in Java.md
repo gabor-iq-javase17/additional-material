@@ -8,14 +8,14 @@ Each exercise provides the expected behavior, and solutions are followed by the 
 
 ---
 
----
-
 ### **Lab Requirements:**
 
 - **Language**: Java
 - **Tools**: Maven, Java 17, IDE (e.g., IntelliJ, Eclipse, VS Code)
 - **Time**: 1 hour
 - **Prerequisites**: Basic knowledge of Java, object-oriented programming, Threading and Maven.
+
+---
 
 ### **Exercise 1: Two Ways to Create Threads**
 

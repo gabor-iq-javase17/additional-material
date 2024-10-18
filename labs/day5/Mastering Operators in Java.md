@@ -86,7 +86,7 @@ If you have completed all the exercises successfully, please raise your hand, so
 
 #### **Exercise 1 Solution: Conditional (Ternary) Operator**
 
-```
+```Java
 public class App {
     public static void main(String[] args) {
         int a = 10;
@@ -115,7 +115,7 @@ The greater value is: 20
 
 #### **Exercise 2 Solution: Pre- and Post-Increment**
 
-```
+```Java
 public class App {
     public static void main(String[] args) {
         int x = 5;
@@ -150,7 +150,7 @@ After pre-increment: 7
 
 #### **Exercise 3 Solution: Boolean AND (`&&`) and OR (`||`) Operators**
 
-```
+```Java
 public class App {
     public static void main(String[] args) {
         boolean a = true;
@@ -195,7 +195,7 @@ b && shortCircuit(): false
 
 #### **Exercise 4 Solution: Combining Multiple Operators**
 
-```
+```Java
 public class App {
     public static void main(String[] args) {
         int x = 10;

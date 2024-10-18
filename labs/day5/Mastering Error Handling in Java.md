@@ -15,6 +15,8 @@ Each exercise includes the **expected output** or **behavior**, and the solution
 - **Time**: 1 hour
 - **Prerequisites**: Basic knowledge of Java, object-oriented programming, Error Handling and Maven.
 
+---
+
 ### **Exercise 1: Throwing Exceptions**
 
 **Objective**: Understand how to throw exceptions to handle invalid conditions.

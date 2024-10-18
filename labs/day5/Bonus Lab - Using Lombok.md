@@ -8,14 +8,14 @@ In the solution section, we will explain how to set up Lombok in a Maven project
 
 ---
 
----
-
 ### **Lab Requirements:**
 
 - **Language**: Java
 - **Tools**: Maven, Java 17, IDE (e.g., IntelliJ, Eclipse, VS Code)
 - **Time**: 1 hour
 - **Prerequisites**: Basic knowledge of Java, object-oriented programming and Maven.
+
+---
 
 ### **Setting up Lombok in Maven**
 
@@ -332,11 +332,35 @@ Person(name=David, age=28)
 
 ---
 
-#### **Exercise 6 Solution**
+### **Exercise 6 Solution:**
 
-```
+```java
 import lombok.extern.java.Log;
 
 @Log
+public class LoggerExample {
+    public static void main(String[] args) {
+        // Log messages at different levels
+        log.info("This is an info message.");
+        log.warning("This is a warning message.");
+        log.severe("This is a severe error message.");
+    }
+}
 
 ```
+
+**Expected Output**:
+
+```
+Oct 18, 2024 10:00:00 AM LoggerExample main
+INFO: This is an info message.
+Oct 18, 2024 10:00:00 AM LoggerExample main
+WARNING: This is a warning message.
+Oct 18, 2024 10:00:00 AM LoggerExample main
+SEVERE: This is a severe error message.
+
+```
+
+**Discussion**: By using the `@Log` annotation from Lombok, a `java.util.logging.Logger` instance named `log` is automatically created. You can use this logger to log messages at various levels such as `info`, `warning`, and `severe`.
+
+**Takeaway**: The `@Log` annotation reduces the need for manually creating a logger in your classes, making your code more concise and easier to maintain.
