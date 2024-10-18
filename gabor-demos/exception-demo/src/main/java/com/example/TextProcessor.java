@@ -22,15 +22,18 @@ public class TextProcessor {
     }
 
     public int wordCountInFileWithExplicitFinally(String fileName) {
+
         int wordCount = 0;
         BufferedReader reader = null;
         try {
             reader = new BufferedReader(new FileReader(fileName));
             String line;
             while ((line = reader.readLine()) != null) {
+
                 // Split the line into words using whitespace as delimiter
                 String[] words = line.trim().split("\\s+");
                 wordCount += words.length;
+
             }
         } catch (IOException e) {
             System.out.println("An error occurred while reading the file: " + e.getMessage());
